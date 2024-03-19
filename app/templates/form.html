@@ -1,0 +1,16 @@
+<!-- form.html -->
+
+<form method="POST" action="/" class="bmr-form">
+    {{ form.csrf_token }}
+    {{ form.gender.label }} {{ form.gender(class="bmr-input") }}
+    {{ form.height_ft.label }} {{ form.height_ft(class="bmr-input") }}
+    {{ form.height_in.label }} {{ form.height_in(class="bmr-input") }}
+    {{ form.weight.label }} {{ form.weight(class="bmr-input") }}
+    {{ form.age.label }} {{ form.age(class="bmr-input") }}
+    {{ form.activity_level.label }} {{ form.activity_level(class="bmr-input") }}
+    <input type="submit" value="Calculate" class="bmr-button">
+</form>
+
+{% if bmr %}
+    <p>BMR calories required: {{ bmr }}</p>
+{% endif %}

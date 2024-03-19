@@ -13,4 +13,6 @@ RUN apt-get update && \
 # Install Python
 RUN apt-get install -y python3 python3-pip
 
+RUN pip
+
 # Any other configurations can be added here
