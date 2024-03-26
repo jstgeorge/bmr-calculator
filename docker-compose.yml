@@ -1,0 +1,8 @@
+services:
+  bmr-calculator:
+    build: .
+    ports:
+      - 5548:5548
+    env_file:
+      - .env
+    command: python app.py

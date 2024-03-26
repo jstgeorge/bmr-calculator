@@ -1,0 +1,46 @@
+.form-container {
+    width: 100%;
+    max-width: 600px; /* adjust this to change the maximum width of the form */
+    margin: 0 auto; /* centers the form horizontally */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bmr-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bmr-form .bmr-input,
+.bmr-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.bmr-form .bmr-button {
+    padding: 10px;
+}
+
+.bmr-form .bmr-result {
+    display: flex;
+    justify-content: center;
+}
+
+/* Add table styles here */
+.bmr-form .bmr-result table {
+    width: 100%; /* Make the table take up the full width of its container */
+    text-align: left; /* Align text to the left */
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin: 0 auto; /* Center the table */
+}
+
+.bmr-form .bmr-result th,
+.bmr-form .bmr-result td {
+    padding: 10px; /* Add some padding around cells */
+    border: 1px solid #ddd; /* Add a border around cells */
+}
+
+.bmr-form .bmr-result th {
+    background-color: #f2f2f2; /* Add a background color to headers */
+}
